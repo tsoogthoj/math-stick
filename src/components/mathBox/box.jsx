@@ -2,6 +2,10 @@ import React, { Component } from "react"
 import "./box.css"
 
 class Box extends Component {
+    state = {
+
+    }
+    
     render() {
         return(
             <div className="box-wrapper">

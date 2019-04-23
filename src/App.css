@@ -1,0 +1,27 @@
+:root {
+  --button-primary-color: rgb(38, 158, 92);
+  --button-primary-color-1: rgb(49, 197, 116);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.addMoreButton {
+  width: 160px;
+  background: var(--button-primary-color);
+  color: white;
+
+}
+
+.addMoreButton:hover {
+  background: var(--button-primary-color-1)
+}
