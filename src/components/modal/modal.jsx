@@ -5,7 +5,9 @@ class Modal extends Component {
     render() {
         return (
             <div className="modal">
-            
+                <div className="modal-closeModal">
+                
+                </div>
             </div>
         )
     }
