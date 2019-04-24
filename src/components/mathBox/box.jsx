@@ -5,9 +5,9 @@ class Box extends Component {
     state = {
 
     }
-    
+
     render() {
-        return(
+        return (
             <div className="box-wrapper">
                 <div className="box-holder">
                     <div className="box-card box-border">
@@ -24,12 +24,12 @@ class Box extends Component {
                         </div>
 
                     </div>
-                        <div className="box-outsideBottom box-mathAnswer box-border">
-                            
-                        </div>
-                        <div className="box-outsideBottom box-letter">
-                        
-                        </div>
+                    <div className="box-outsideBottom box-mathAnswer box-border">
+
+                    </div>
+                    <div className="box-outsideBottom box-letter">
+
+                    </div>
                 </div>
 
                 <div className="box-holder">
@@ -47,12 +47,12 @@ class Box extends Component {
                         </div>
 
                     </div>
-                        <div className="box-outsideBottom box-mathAnswer box-border">
-                            
-                        </div>
-                        <div className="box-outsideBottom box-letter">
-                        
-                        </div>
+                    <div className="box-outsideBottom box-mathAnswer box-border">
+
+                    </div>
+                    <div className="box-outsideBottom box-letter">
+
+                    </div>
                 </div>
             </div>
         )

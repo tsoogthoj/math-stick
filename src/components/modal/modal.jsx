@@ -1,13 +1,10 @@
 import React, { Component } from "react"
-
+import "./modal.css"
 class Modal extends Component {
 
     render() {
         return (
-            <div className="modal">
-                <div className="modal-closeModal">
-                
-                </div>
+            <div className="modal-wrapper">
             </div>
         )
     }
