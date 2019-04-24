@@ -1,6 +1,12 @@
 :root {
   --button-primary-color: rgb(38, 158, 92);
   --button-primary-color-1: rgb(49, 197, 116);
+  --button-print: rgb(17, 17, 204);
+  --button-print-1: rgb(44, 44, 255);
+}
+
+.App {
+  padding-top: 10px;
 }
 
 .button {
@@ -9,6 +15,7 @@
   flex-direction: column;
   text-align: center;
   border: 1px solid black;
+  padding: 5px;
 }
 
 .button:hover {
@@ -19,9 +26,23 @@
   width: 160px;
   background: var(--button-primary-color);
   color: white;
-
+  margin-right: 10px;
 }
 
 .addMoreButton:hover {
   background: var(--button-primary-color-1)
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.printButton {
+  color: white;
+  background: var(--button-print);
+}
+
+.printButton:hover {
+  background: var(--button-print-1)
 }
