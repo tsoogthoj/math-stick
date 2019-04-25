@@ -3,4 +3,32 @@
     height: 90%;
     width: 90%;
     margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.modal-exit {
+    position: relative;
+}
+
+.modal-exit img {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: all .2s ease-in-out;
+    background-attachment: fixed;
+}
+
+.modal-exit img:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+}
+
+.modal-body {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+    background: blue;
 }
