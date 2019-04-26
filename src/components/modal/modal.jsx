@@ -8,7 +8,7 @@ class Modal extends Component {
         return (
             <div className="modal-wrapper">
                 <div className="modal-exit">
-                    <img src={clearIcon} alt="X"/>
+                    <img src={clearIcon} alt="X" onClick={this.props.active}/>
                 </div>
                 <div className="modal-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam nisi animi ullam, minus reiciendis veniam atque itaque minima, vel neque. Placeat molestiae laudantium eveniet voluptatum iste optio adipisci nesciunt!

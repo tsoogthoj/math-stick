@@ -32,7 +32,7 @@ class App extends Component {
         </div>
         < Box />
         <div className={(this.state.modalOpen ? "modalOpen" : "modalClose")}>
-          {(this.state.modalOpen ? < Modal /> : null)}
+          {(this.state.modalOpen ? < Modal active={ this.modalStatus } /> : null)}
         </div>
       </div>
     );
