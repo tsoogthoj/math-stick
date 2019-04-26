@@ -6,10 +6,18 @@ import Modal from "./components/modal/modal"
 class App extends Component {
   state = {
     modalOpen: false,
+    openedModal: "",
   }
 
   modalStatus = () => {
     this.state.modalOpen ? (this.setState({ modalOpen: false })) : (this.setState({ modalOpen: true }))
+  }
+
+  openedModal = (event) => {
+    this.setState({
+      openedModal: event.target.dataset.name
+    })
+    console.log(event.target.dataset.name)
   }
 
   render() {
@@ -17,7 +25,9 @@ class App extends Component {
       <div className="App">
         <div className="header">
           <div className="addMoreButton button"
-            onClick={this.modalStatus}
+            data-name="add"
+            onClick={ (event) => {this.modalStatus(); this.openedModal(event)}
+            }
           >
             Add Words/Sentence
         </div>
@@ -26,13 +36,19 @@ class App extends Component {
             Print
         </div>
           <div className="alphabetButton button"
-            onClick={this.modalStatus}>
+            data-name="key"
+            onClick={ (event) => {this.modalStatus(); this.openedModal(event)}
+          }>
             Alphabets Key
         </div>
         </div>
         < Box />
         <div className={(this.state.modalOpen ? "modalOpen" : "modalClose")}>
-          {(this.state.modalOpen ? < Modal active={ this.modalStatus } /> : null)}
+          {(this.state.modalOpen ?
+            < Modal
+              active={this.modalStatus}
+              openedModal={this.state.openedModal}
+            /> : null)}
         </div>
       </div>
     );
