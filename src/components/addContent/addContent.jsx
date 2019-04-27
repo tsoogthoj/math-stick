@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 
-class Alphabet extends Component {
+class AddContent extends Component {
     render() {
         return(
             <div className="alphabet-wrapper">
-            
+                Add Content
             </div>
 
         )
     }
 }
 
-export default Alphabet
+export default AddContent

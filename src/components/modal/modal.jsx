@@ -3,15 +3,17 @@ import "./modal.css"
 import clearIcon from "./img/clear.svg"
 
 
-import AddContent from "../addModal/addModal"
+import AddContent from "../addContent/addContent"
+import KeyContent from "../keyContent/keyContent"
 
 class Modal extends Component {
+    
     switchModalContent = (content) => {
         switch(content) {
             case "add":
                 return < AddContent />
             case "key":
-                return "key";
+                return < KeyContent />;
             default:
                 return null
         }
