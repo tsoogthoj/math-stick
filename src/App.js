@@ -5,8 +5,8 @@ import Modal from "./components/modal/modal"
 
 class App extends Component {
   state = {
-    modalOpen: false,
-    openedModal: "",
+    modalOpen: true,
+    openedModal: "add",
   }
 
   modalStatus = () => {
