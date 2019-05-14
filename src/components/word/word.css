@@ -1,3 +1,31 @@
 .word-wrapper {
     margin-top: 10px;
 }
+
+.word-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.wordLabel {
+    margin-top: 1rem;
+}
+
+.wordAdd {
+    margin-top: 1rem;
+}
+
+.wordAdd svg {
+    transition: all .2s ease-in-out;
+}
+.wordAdd svg:hover {
+    border-radius: 5px;
+    background: black;
+    fill: white;
+    cursor: pointer;
+
+}
+
+.wordSubmit {
+    width: 5rem;
+}
