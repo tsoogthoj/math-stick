@@ -18,5 +18,10 @@
 
 .addContent-button:hover {
     background: var(--button-primary-color);
+    color: black;
+}
+
+.addContent-selected {
+    background: var(--button-primary-color);
     color: white;
 }

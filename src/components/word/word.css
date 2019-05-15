@@ -1,18 +1,24 @@
 .word-wrapper {
+    margin: auto;
+    width: 50%;
     margin-top: 10px;
+
 }
 
 .word-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.wordLabel {
-    margin-top: 1rem;
+.word-form label {
+    text-align: center;
+    margin-right: 1rem;
 }
 
-.wordAdd {
-    margin-top: 1rem;
+.form-group {
+    display: flex;
+    justify-content: center;
 }
 
 .wordAdd svg {

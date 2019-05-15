@@ -7,9 +7,9 @@ import AddContent from "../addContent/addContent"
 import KeyContent from "../keyContent/keyContent"
 
 class Modal extends Component {
-    
+
     switchModalContent = (content) => {
-        switch(content) {
+        switch (content) {
             case "add":
                 return < AddContent />
             case "key":
@@ -23,7 +23,7 @@ class Modal extends Component {
         return (
             <div className="modal-wrapper">
                 <div className="modal-exit">
-                    <img src={clearIcon} alt="X" onClick={this.props.active}/>
+                    <img src={clearIcon} alt="X" onClick={this.props.active} />
                 </div>
                 <div className="modal-body">
                     {this.switchModalContent(this.props.openedModal)}

@@ -26,6 +26,16 @@ class AddContent extends Component {
         });
     }
 
+    selected = () => {
+        switch (this.state.addDisplay) {
+            case "word":
+                return "addContent-selected"
+            case "sentence":
+                return "addContent-selected"
+            default:
+                return null
+        }
+    }
     render() {
         return (
             <div className="addContent-wrapper">
@@ -33,11 +43,11 @@ class AddContent extends Component {
                     <div
                         onClick={this.handleChange}
                         data-name="word"
-                        className="addContent-button button">Words</div>
+                        className={this.state.addDisplay === "word" ? "addContent-button button addContent-selected" : "addContent-button button"} >Words</div>
                     <div
                         onClick={this.handleChange}
                         data-name="sentence"
-                        className="addContent-button button">Sentence</div>
+                        className={this.state.addDisplay === "sentence" ? "addContent-button button addContent-selected" : "addContent-button button"}>Sentence</div>
                 </div>
                 <div className="addContent-content">
                     {this.switchAddContent(this.state.addDisplay)}
