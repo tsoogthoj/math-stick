@@ -33,5 +33,14 @@
 }
 
 .wordSubmit {
+    height: 2rem;
     width: 5rem;
+}
+
+.word-addSubmit {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
 }

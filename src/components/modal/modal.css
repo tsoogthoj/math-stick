@@ -1,7 +1,7 @@
 .modal-wrapper {
     background: white;
     height: 90%;
-    width: 90%;
+    min-width: 50%;
     margin: auto;
     border-radius: 5px;
     padding: 10px;
